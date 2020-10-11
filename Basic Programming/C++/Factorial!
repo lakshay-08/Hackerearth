@@ -1,0 +1,24 @@
+/*You have been given a positive integer N. You need to find and print the Factorial of this number. 
+The Factorial of a positive integer N refers to the product of all number in the range from 1 to N.*/
+
+
+#include <iostream>
+using namespace std;
+int fac(int n)
+{
+  if(n==1)
+  {
+      return(1);
+  }
+  else
+  {
+      return(n*fac(n-1));
+  }
+}
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<fac(n);
+    return(0);
+}
