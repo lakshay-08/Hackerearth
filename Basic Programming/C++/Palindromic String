@@ -1,0 +1,38 @@
+/*
+You have been given a String S. You need to find and print whether this string is a palindrome or not. 
+If yes, print "YES" (without quotes), else print "NO" (without quotes).
+*/
+
+#include <string.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int nl;
+    string s;
+    cin>>s;
+    int f=0;
+    int l=s.size();
+    int be=l-1;
+    for(int i=0;i<l/2;i++)
+    {
+     if(s[i]==s[be])
+     {
+         be=be-1;
+         continue;
+     }
+     else{
+        f=1;
+        break;
+     }
+     be=be-1;
+    }
+    if(f)
+    {
+        cout<<"NO";
+    }
+    else{
+        cout<<"YES";
+    }
+    return(0);
+}
