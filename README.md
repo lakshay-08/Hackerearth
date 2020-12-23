@@ -1,2 +1,2 @@
 # Hackerearth
-Solutions to some basic problems of Hackerearth 
+Solutions to some basic problems on Hackerearth 
